@@ -62,12 +62,7 @@ namespace GildedRose.Tests
             {
                 Items = new List<Item>
                 {
-                    new Item
-                    {
-                        Name = "Aged Brie",
-                        SellIn = sellIn,
-                        Quality = 20
-                    }
+                    new AgedBrie(sellIn, 20)
                 }
             };
 
