@@ -1,7 +1,6 @@
 using GildedRose.Console;
 using System.Collections.Generic;
 using Xunit;
-using Xunit.Sdk;
 
 namespace GildedRose.Tests
 {
