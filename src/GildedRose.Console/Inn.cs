@@ -11,7 +11,7 @@ namespace GildedRose.Console
             this.Items = ((List<Item>)items).AsReadOnly();
         }
 
-        public void UpdateItemQuality()
+        public void UpdateItem()
         {
             for (var i = 0; i < Items.Count; i++)
             {

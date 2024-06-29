@@ -37,7 +37,7 @@ namespace GildedRose.Console
 
         public void UpdateQuality()
         {
-            new Inn(this.Items).UpdateItemQuality();
+            new Inn(this.Items).UpdateItem();
         }
 
     }
