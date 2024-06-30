@@ -10,19 +10,21 @@
 
         public virtual void Update()
         {
-            if (this.Quality > 0)
-            {
-                this.Quality = this.Quality - 1;
-            }
+            this.UpdateQuality();
 
             this.DecreaseSellIn();
 
             if (this.SellIn < 0)
             {
-                if (this.Quality > 0)
-                {
-                    this.Quality = this.Quality - 1;
-                }
+                this.UpdateQuality();
+            }
+        }
+
+        protected virtual void UpdateQuality()
+        {
+            if (this.Quality > 0)
+            {
+                this.Quality = this.Quality - 1;
             }
         }
 

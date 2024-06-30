@@ -11,14 +11,19 @@
 
         public override void Update()
         {
-            if (this.Quality < 50)
-            {
-                this.Quality++;
-            }
+            this.UpdateQuality();
 
             this.DecreaseSellIn();
 
-            if (this.SellIn < 0 && this.Quality < 50)
+            if (this.SellIn < 0)
+            {
+                this.UpdateQuality();
+            }
+        }
+
+        protected override void UpdateQuality()
+        {
+            if (this.Quality < 50)
             {
                 this.Quality++;
             }
