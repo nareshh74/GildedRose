@@ -16,7 +16,7 @@
                 this.Quality++;
             }
 
-            this.SellIn--;
+            this.DecreaseSellIn();
 
             if (this.SellIn < 0 && this.Quality < 50)
             {

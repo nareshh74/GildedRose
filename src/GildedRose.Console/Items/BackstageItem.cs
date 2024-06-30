@@ -32,7 +32,7 @@
                 }
             }
 
-            this.SellIn = this.SellIn - 1;
+            this.DecreaseSellIn();
 
             if (this.SellIn < 0)
             {

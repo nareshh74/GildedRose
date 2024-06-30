@@ -15,7 +15,7 @@
                 this.Quality = this.Quality - 1;
             }
 
-            this.SellIn = this.SellIn - 1;
+            this.DecreaseSellIn();
 
             if (this.SellIn < 0)
             {
@@ -24,6 +24,11 @@
                     this.Quality = this.Quality - 1;
                 }
             }
+        }
+
+        protected void DecreaseSellIn()
+        {
+            this.SellIn = this.SellIn - 1;
         }
     }
 }
