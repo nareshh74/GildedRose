@@ -19,7 +19,7 @@ namespace GildedRose.Console
                                               new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
                                               new SulfurasItem(sellIn: 0, quality: 80),
                                               new BackstageItem(sellIn: 15, quality: 20),
-                                              new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
+                                              new ConjuredItem(sellIn: 3, quality: 6)
                                           }
 
                           };

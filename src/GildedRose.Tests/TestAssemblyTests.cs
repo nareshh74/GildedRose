@@ -24,6 +24,27 @@ namespace GildedRose.Tests
         }
 
         [Theory]
+        [InlineData(18, 20)]
+        public void TestItem_Conjured(int expectedQuality, int sellIn)
+        {
+            // Arrange
+            var app = new Program()
+            {
+                Items = new List<Item>
+                {
+                    new ConjuredItem(sellIn, 20)
+                }
+            };
+
+            // Act
+            app.UpdateQuality();
+
+            // Assert
+            Assert.Equal(expectedQuality, app.Items[0].Quality);
+            Assert.Equal(sellIn - 1, app.Items[0].SellIn);
+        }
+
+        [Theory]
         [InlineData(21, 20)]
         [InlineData(22, 10)]
         [InlineData(23, 4)]
