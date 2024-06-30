@@ -12,27 +12,33 @@
         {
             if (this.Quality > 0)
             {
-                if (this.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    this.Quality = this.Quality - 1;
-                }
+                this.Quality = this.Quality - 1;
             }
 
-            if (this.Name != "Sulfuras, Hand of Ragnaros")
-            {
-                this.SellIn = this.SellIn - 1;
-            }
+            this.SellIn = this.SellIn - 1;
 
             if (this.SellIn < 0)
             {
                 if (this.Quality > 0)
                 {
-                    if (this.Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        this.Quality = this.Quality - 1;
-                    }
+                    this.Quality = this.Quality - 1;
                 }
             }
+        }
+    }
+
+    public class Sulfuras : Item
+    {
+        public Sulfuras(int sellIn, int quality) : base()
+        {
+            this.Name = "Sulfuras, Hand of Ragnaros";
+            this.SellIn = sellIn;
+            this.Quality = quality;
+        }
+
+        public override void Update()
+        {
+            // Sulfuras never has to be sold or decreases in Quality
         }
     }
 }

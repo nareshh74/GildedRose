@@ -79,12 +79,7 @@ namespace GildedRose.Tests
             {
                 Items = new List<Item>
                 {
-                    new Item
-                    {
-                        Name = "Sulfuras, Hand of Ragnaros",
-                        SellIn = sellIn,
-                        Quality = 20
-                    }
+                    new Sulfuras(sellIn, 20)
                 }
             };
 
