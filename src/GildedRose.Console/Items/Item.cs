@@ -20,7 +20,7 @@
             }
         }
 
-        private void UpdateQuality()
+        protected virtual void UpdateQuality()
         {
             if (this.Quality > 0)
             {
