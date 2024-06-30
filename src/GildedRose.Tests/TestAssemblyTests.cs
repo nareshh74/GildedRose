@@ -35,12 +35,7 @@ namespace GildedRose.Tests
             {
                 Items = new List<Item>
                 {
-                    new Item
-                    {
-                        Name = "Backstage passes to a TAFKAL80ETC concert",
-                        SellIn = sellIn,
-                        Quality = 20
-                    }
+                    new BackstageItem(sellIn, 20)
                 }
             };
 

@@ -10,40 +10,11 @@
 
         public virtual void Update()
         {
-            if (this.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (this.Quality > 0)
             {
-                if (this.Quality > 0)
+                if (this.Name != "Sulfuras, Hand of Ragnaros")
                 {
-                    if (this.Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        this.Quality = this.Quality - 1;
-                    }
-                }
-            }
-            else
-            {
-                if (this.Quality < 50)
-                {
-                    this.Quality = this.Quality + 1;
-
-                    if (this.Name == "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                        if (this.SellIn < 11)
-                        {
-                            if (this.Quality < 50)
-                            {
-                                this.Quality = this.Quality + 1;
-                            }
-                        }
-
-                        if (this.SellIn < 6)
-                        {
-                            if (this.Quality < 50)
-                            {
-                                this.Quality = this.Quality + 1;
-                            }
-                        }
-                    }
+                    this.Quality = this.Quality - 1;
                 }
             }
 
@@ -54,19 +25,12 @@
 
             if (this.SellIn < 0)
             {
-                if (this.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (this.Quality > 0)
                 {
-                    if (this.Quality > 0)
+                    if (this.Name != "Sulfuras, Hand of Ragnaros")
                     {
-                        if (this.Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            this.Quality = this.Quality - 1;
-                        }
+                        this.Quality = this.Quality - 1;
                     }
-                }
-                else
-                {
-                    this.Quality = this.Quality - this.Quality;
                 }
             }
         }
