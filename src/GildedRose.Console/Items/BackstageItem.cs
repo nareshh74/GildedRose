@@ -31,7 +31,7 @@
             }
         }
 
-        protected override void UpdateQuality()
+        private void UpdateQuality()
         {
             if (this.Quality < 50)
             {
