@@ -57,7 +57,7 @@ namespace GildedRose.Tests
             {
                 Items = new List<Item>
                 {
-                    new AgedBrie(sellIn, 20)
+                    new AgedBrieItem(sellIn, 20)
                 }
             };
 
@@ -79,7 +79,7 @@ namespace GildedRose.Tests
             {
                 Items = new List<Item>
                 {
-                    new Sulfuras(sellIn, 20)
+                    new SulfurasItem(sellIn, 20)
                 }
             };
 

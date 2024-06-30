@@ -1,8 +1,8 @@
 ﻿namespace GildedRose.Console
 {
-    public class AgedBrie : Item
+    public class AgedBrieItem : Item
     {
-        public AgedBrie(int sellIn, int quality) : base()
+        public AgedBrieItem(int sellIn, int quality) : base()
         {
             this.Name = "Aged Brie";
             this.SellIn = sellIn;

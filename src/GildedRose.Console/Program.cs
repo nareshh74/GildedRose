@@ -15,9 +15,9 @@ namespace GildedRose.Console
                               Items = new List<Item>
                                           {
                                               new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
-                                              new AgedBrie(sellIn: 2, quality: 0),
+                                              new AgedBrieItem(sellIn: 2, quality: 0),
                                               new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
-                                              new Sulfuras(sellIn: 0, quality: 80),
+                                              new SulfurasItem(sellIn: 0, quality: 80),
                                               new BackstageItem(sellIn: 15, quality: 20),
                                               new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
                                           }

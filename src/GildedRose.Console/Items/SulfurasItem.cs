@@ -1,8 +1,8 @@
 ﻿namespace GildedRose.Console
 {
-    public class Sulfuras : Item
+    public class SulfurasItem : Item
     {
-        public Sulfuras(int sellIn, int quality) : base()
+        public SulfurasItem(int sellIn, int quality) : base()
         {
             this.Name = "Sulfuras, Hand of Ragnaros";
             this.SellIn = sellIn;
